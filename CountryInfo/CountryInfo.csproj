@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCA6A593-3113-4790-9D41-598756FC7B17}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CountryInfo</RootNamespace>
+    <AssemblyName>CountryInfo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Country.cs" />
+    <Compile Include="CountryArray.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceImage.cs" />
+    <Compile Include="Resources\Strings\CountryNames.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryNames.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Strings\CountryNames.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryNames.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Strings\CountryNames.es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CountryNames.es.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Strings\CountryNames.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountryNames.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Strings\CountryNames.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountryNames.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Strings\CountryNames.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CountryNames.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Flags\64AD.png" />
+    <Resource Include="Resources\Flags\64AE.png" />
+    <Resource Include="Resources\Flags\64AF.png" />
+    <Resource Include="Resources\Flags\64AG.png" />
+    <Resource Include="Resources\Flags\64AI.png" />
+    <Resource Include="Resources\Flags\64AL.png" />
+    <Resource Include="Resources\Flags\64AM.png" />
+    <Resource Include="Resources\Flags\64AO.png" />
+    <Resource Include="Resources\Flags\64AQ.png" />
+    <Resource Include="Resources\Flags\64AR.png" />
+    <Resource Include="Resources\Flags\64AS.png" />
+    <Resource Include="Resources\Flags\64AT.png" />
+    <Resource Include="Resources\Flags\64AU.png" />
+    <Resource Include="Resources\Flags\64AW.png" />
+    <Resource Include="Resources\Flags\64AX.png" />
+    <Resource Include="Resources\Flags\64AZ.png" />
+    <Resource Include="Resources\Flags\64BA.png" />
+    <Resource Include="Resources\Flags\64BB.png" />
+    <Resource Include="Resources\Flags\64BD.png" />
+    <Resource Include="Resources\Flags\64BE.png" />
+    <Resource Include="Resources\Flags\64BF.png" />
+    <Resource Include="Resources\Flags\64BG.png" />
+    <Resource Include="Resources\Flags\64BH.png" />
+    <Resource Include="Resources\Flags\64BI.png" />
+    <Resource Include="Resources\Flags\64BJ.png" />
+    <Resource Include="Resources\Flags\64BL.png" />
+    <Resource Include="Resources\Flags\64BM.png" />
+    <Resource Include="Resources\Flags\64BN.png" />
+    <Resource Include="Resources\Flags\64BO.png" />
+    <Resource Include="Resources\Flags\64BQ.png" />
+    <Resource Include="Resources\Flags\64BR.png" />
+    <Resource Include="Resources\Flags\64BS.png" />
+    <Resource Include="Resources\Flags\64BT.png" />
+    <Resource Include="Resources\Flags\64BW.png" />
+    <Resource Include="Resources\Flags\64BY.png" />
+    <Resource Include="Resources\Flags\64BZ.png" />
+    <Resource Include="Resources\Flags\64CA.png" />
+    <Resource Include="Resources\Flags\64CC.png" />
+    <Resource Include="Resources\Flags\64CD.png" />
+    <Resource Include="Resources\Flags\64CF.png" />
+    <Resource Include="Resources\Flags\64CG.png" />
+    <Resource Include="Resources\Flags\64CH.png" />
+    <Resource Include="Resources\Flags\64CI.png" />
+    <Resource Include="Resources\Flags\64CK.png" />
+    <Resource Include="Resources\Flags\64CL.png" />
+    <Resource Include="Resources\Flags\64CM.png" />
+    <Resource Include="Resources\Flags\64CN.png" />
+    <Resource Include="Resources\Flags\64CO.png" />
+    <Resource Include="Resources\Flags\64CR.png" />
+    <Resource Include="Resources\Flags\64CU.png" />
+    <Resource Include="Resources\Flags\64CV.png" />
+    <Resource Include="Resources\Flags\64CW.png" />
+    <Resource Include="Resources\Flags\64CX.png" />
+    <Resource Include="Resources\Flags\64CY.png" />
+    <Resource Include="Resources\Flags\64CZ.png" />
+    <Resource Include="Resources\Flags\64DE.png" />
+    <Resource Include="Resources\Flags\64DJ.png" />
+    <Resource Include="Resources\Flags\64DK.png" />
+    <Resource Include="Resources\Flags\64DM.png" />
+    <Resource Include="Resources\Flags\64DO.png" />
+    <Resource Include="Resources\Flags\64DZ.png" />
+    <Resource Include="Resources\Flags\64EC.png" />
+    <Resource Include="Resources\Flags\64EE.png" />
+    <Resource Include="Resources\Flags\64EG.png" />
+    <Resource Include="Resources\Flags\64EH.png" />
+    <Resource Include="Resources\Flags\64ER.png" />
+    <Resource Include="Resources\Flags\64ES.png" />
+    <Resource Include="Resources\Flags\64ET.png" />
+    <Resource Include="Resources\Flags\64FI.png" />
+    <Resource Include="Resources\Flags\64FJ.png" />
+    <Resource Include="Resources\Flags\64FK.png" />
+    <Resource Include="Resources\Flags\64FM.png" />
+    <Resource Include="Resources\Flags\64FO.png" />
+    <Resource Include="Resources\Flags\64FR.png" />
+    <Resource Include="Resources\Flags\64GA.png" />
+    <Resource Include="Resources\Flags\64GB.png" />
+    <Resource Include="Resources\Flags\64GD.png" />
+    <Resource Include="Resources\Flags\64GE.png" />
+    <Resource Include="Resources\Flags\64GG.png" />
+    <Resource Include="Resources\Flags\64GH.png" />
+    <Resource Include="Resources\Flags\64GI.png" />
+    <Resource Include="Resources\Flags\64GL.png" />
+    <Resource Include="Resources\Flags\64GM.png" />
+    <Resource Include="Resources\Flags\64GN.png" />
+    <Resource Include="Resources\Flags\64GQ.png" />
+    <Resource Include="Resources\Flags\64GR.png" />
+    <Resource Include="Resources\Flags\64GS.png" />
+    <Resource Include="Resources\Flags\64GT.png" />
+    <Resource Include="Resources\Flags\64GU.png" />
+    <Resource Include="Resources\Flags\64GW.png" />
+    <Resource Include="Resources\Flags\64GY.png" />
+    <Resource Include="Resources\Flags\64HK.png" />
+    <Resource Include="Resources\Flags\64HN.png" />
+    <Resource Include="Resources\Flags\64HR.png" />
+    <Resource Include="Resources\Flags\64HT.png" />
+    <Resource Include="Resources\Flags\64HU.png" />
+    <Resource Include="Resources\Flags\64ID.png" />
+    <Resource Include="Resources\Flags\64IE.png" />
+    <Resource Include="Resources\Flags\64IL.png" />
+    <Resource Include="Resources\Flags\64IM.png" />
+    <Resource Include="Resources\Flags\64IN.png" />
+    <Resource Include="Resources\Flags\64IQ.png" />
+    <Resource Include="Resources\Flags\64IR.png" />
+    <Resource Include="Resources\Flags\64IS.png" />
+    <Resource Include="Resources\Flags\64IT.png" />
+    <Resource Include="Resources\Flags\64JE.png" />
+    <Resource Include="Resources\Flags\64JM.png" />
+    <Resource Include="Resources\Flags\64JO.png" />
+    <Resource Include="Resources\Flags\64JP.png" />
+    <Resource Include="Resources\Flags\64KE.png" />
+    <Resource Include="Resources\Flags\64KG.png" />
+    <Resource Include="Resources\Flags\64KH.png" />
+    <Resource Include="Resources\Flags\64KI.png" />
+    <Resource Include="Resources\Flags\64KM.png" />
+    <Resource Include="Resources\Flags\64KN.png" />
+    <Resource Include="Resources\Flags\64KP.png" />
+    <Resource Include="Resources\Flags\64KR.png" />
+    <Resource Include="Resources\Flags\64KW.png" />
+    <Resource Include="Resources\Flags\64KY.png" />
+    <Resource Include="Resources\Flags\64KZ.png" />
+    <Resource Include="Resources\Flags\64LA.png" />
+    <Resource Include="Resources\Flags\64LB.png" />
+    <Resource Include="Resources\Flags\64LC.png" />
+    <Resource Include="Resources\Flags\64LI.png" />
+    <Resource Include="Resources\Flags\64LK.png" />
+    <Resource Include="Resources\Flags\64LR.png" />
+    <Resource Include="Resources\Flags\64LS.png" />
+    <Resource Include="Resources\Flags\64LT.png" />
+    <Resource Include="Resources\Flags\64LU.png" />
+    <Resource Include="Resources\Flags\64LV.png" />
+    <Resource Include="Resources\Flags\64LY.png" />
+    <Resource Include="Resources\Flags\64MA.png" />
+    <Resource Include="Resources\Flags\64MC.png" />
+    <Resource Include="Resources\Flags\64MD.png" />
+    <Resource Include="Resources\Flags\64ME.png" />
+    <Resource Include="Resources\Flags\64MF.png" />
+    <Resource Include="Resources\Flags\64MG.png" />
+    <Resource Include="Resources\Flags\64MH.png" />
+    <Resource Include="Resources\Flags\64MK.png" />
+    <Resource Include="Resources\Flags\64ML.png" />
+    <Resource Include="Resources\Flags\64MM.png" />
+    <Resource Include="Resources\Flags\64MN.png" />
+    <Resource Include="Resources\Flags\64MO.png" />
+    <Resource Include="Resources\Flags\64MP.png" />
+    <Resource Include="Resources\Flags\64MQ.png" />
+    <Resource Include="Resources\Flags\64MR.png" />
+    <Resource Include="Resources\Flags\64MS.png" />
+    <Resource Include="Resources\Flags\64MT.png" />
+    <Resource Include="Resources\Flags\64MU.png" />
+    <Resource Include="Resources\Flags\64MV.png" />
+    <Resource Include="Resources\Flags\64MW.png" />
+    <Resource Include="Resources\Flags\64MX.png" />
+    <Resource Include="Resources\Flags\64MY.png" />
+    <Resource Include="Resources\Flags\64MZ.png" />
+    <Resource Include="Resources\Flags\64NA.png" />
+    <Resource Include="Resources\Flags\64NC.png" />
+    <Resource Include="Resources\Flags\64NE.png" />
+    <Resource Include="Resources\Flags\64NF.png" />
+    <Resource Include="Resources\Flags\64NG.png" />
+    <Resource Include="Resources\Flags\64NI.png" />
+    <Resource Include="Resources\Flags\64NL.png" />
+    <Resource Include="Resources\Flags\64NO.png" />
+    <Resource Include="Resources\Flags\64NP.png" />
+    <Resource Include="Resources\Flags\64NR.png" />
+    <Resource Include="Resources\Flags\64NU.png" />
+    <Resource Include="Resources\Flags\64NZ.png" />
+    <Resource Include="Resources\Flags\64OM.png" />
+    <Resource Include="Resources\Flags\64PA.png" />
+    <Resource Include="Resources\Flags\64PE.png" />
+    <Resource Include="Resources\Flags\64PF.png" />
+    <Resource Include="Resources\Flags\64PG.png" />
+    <Resource Include="Resources\Flags\64PH.png" />
+    <Resource Include="Resources\Flags\64PK.png" />
+    <Resource Include="Resources\Flags\64PL.png" />
+    <Resource Include="Resources\Flags\64PN.png" />
+    <Resource Include="Resources\Flags\64PR.png" />
+    <Resource Include="Resources\Flags\64PS.png" />
+    <Resource Include="Resources\Flags\64PT.png" />
+    <Resource Include="Resources\Flags\64PW.png" />
+    <Resource Include="Resources\Flags\64PY.png" />
+    <Resource Include="Resources\Flags\64QA.png" />
+    <Resource Include="Resources\Flags\64RO.png" />
+    <Resource Include="Resources\Flags\64RS.png" />
+    <Resource Include="Resources\Flags\64RU.png" />
+    <Resource Include="Resources\Flags\64RW.png" />
+    <Resource Include="Resources\Flags\64SA.png" />
+    <Resource Include="Resources\Flags\64SB.png" />
+    <Resource Include="Resources\Flags\64SC.png" />
+    <Resource Include="Resources\Flags\64SD.png" />
+    <Resource Include="Resources\Flags\64SE.png" />
+    <Resource Include="Resources\Flags\64SG.png" />
+    <Resource Include="Resources\Flags\64SH.png" />
+    <Resource Include="Resources\Flags\64SI.png" />
+    <Resource Include="Resources\Flags\64SK.png" />
+    <Resource Include="Resources\Flags\64SL.png" />
+    <Resource Include="Resources\Flags\64SM.png" />
+    <Resource Include="Resources\Flags\64SN.png" />
+    <Resource Include="Resources\Flags\64SO.png" />
+    <Resource Include="Resources\Flags\64SR.png" />
+    <Resource Include="Resources\Flags\64SS.png" />
+    <Resource Include="Resources\Flags\64ST.png" />
+    <Resource Include="Resources\Flags\64SV.png" />
+    <Resource Include="Resources\Flags\64SY.png" />
+    <Resource Include="Resources\Flags\64SZ.png" />
+    <Resource Include="Resources\Flags\64TC.png" />
+    <Resource Include="Resources\Flags\64TD.png" />
+    <Resource Include="Resources\Flags\64TF.png" />
+    <Resource Include="Resources\Flags\64TG.png" />
+    <Resource Include="Resources\Flags\64TH.png" />
+    <Resource Include="Resources\Flags\64TJ.png" />
+    <Resource Include="Resources\Flags\64TK.png" />
+    <Resource Include="Resources\Flags\64TL.png" />
+    <Resource Include="Resources\Flags\64TM.png" />
+    <Resource Include="Resources\Flags\64TN.png" />
+    <Resource Include="Resources\Flags\64TO.png" />
+    <Resource Include="Resources\Flags\64TR.png" />
+    <Resource Include="Resources\Flags\64TT.png" />
+    <Resource Include="Resources\Flags\64TV.png" />
+    <Resource Include="Resources\Flags\64TW.png" />
+    <Resource Include="Resources\Flags\64TZ.png" />
+    <Resource Include="Resources\Flags\64UA.png" />
+    <Resource Include="Resources\Flags\64UG.png" />
+    <Resource Include="Resources\Flags\64US.png" />
+    <Resource Include="Resources\Flags\64UY.png" />
+    <Resource Include="Resources\Flags\64UZ.png" />
+    <Resource Include="Resources\Flags\64VA.png" />
+    <Resource Include="Resources\Flags\64VC.png" />
+    <Resource Include="Resources\Flags\64VE.png" />
+    <Resource Include="Resources\Flags\64VG.png" />
+    <Resource Include="Resources\Flags\64VI.png" />
+    <Resource Include="Resources\Flags\64VN.png" />
+    <Resource Include="Resources\Flags\64VU.png" />
+    <Resource Include="Resources\Flags\64WF.png" />
+    <Resource Include="Resources\Flags\64WS.png" />
+    <Resource Include="Resources\Flags\64YE.png" />
+    <Resource Include="Resources\Flags\64YT.png" />
+    <Resource Include="Resources\Flags\64ZA.png" />
+    <Resource Include="Resources\Flags\64ZM.png" />
+    <Resource Include="Resources\Flags\64ZW.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
