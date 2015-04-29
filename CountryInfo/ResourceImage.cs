@@ -21,7 +21,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
-namespace CountryInfo
+namespace Baqsoft.CountryInfo
 {
     class ResourceImage
     {

@@ -21,7 +21,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
-namespace CountryInfo
+namespace Baqsoft.CountryInfo
 {
     public class Country : IComparable
     {
@@ -31,6 +31,20 @@ namespace CountryInfo
             Name = countryName;
             Flag = countryFlag;
 
+        }
+
+        public Country(Country country)
+        {
+            Iso2 = country.Iso2;
+            Name = country.Name;
+            Flag = country.Flag;
+        }
+
+        public Country()
+        {
+            Iso2 = "";
+            Name = "";
+            Flag = null;
         }
 
         private string _iso2;

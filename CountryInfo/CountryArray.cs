@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-using CountryInfo.Resources.Strings;
+using Baqsoft.CountryInfo.Resources.Strings;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,9 +23,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
-namespace CountryInfo
+namespace Baqsoft.CountryInfo
 {
-    public class CountryArray
+    public static class CountryArray
     {
         private static Country[] _countryArray = new Country[]
         {
@@ -270,11 +270,40 @@ namespace CountryInfo
             new Country("ZW", CountryNames.ZW, ResourceImage.GetEmbeddedBitmapResource("64ZW.png"))
         };
 
-        public Country[] GetArray()
+        public static int Length
         {
-            return _countryArray;
+            get { return _countryArray.Length; }
         }
 
+        public static Country GetCountry(int position)
+        {
+            return new Country(_countryArray[position]);
+        }
 
+        public static Country GetCountry(string iso2)
+        {
+            foreach (Country country in _countryArray)
+            {
+                if(country.Iso2 == iso2)
+                {
+                    return new Country(country);
+                }
+            }
+
+            return null;
+        }
+
+        public static int GetPosition(string iso2)
+        {
+            for (int count = 0; count < _countryArray.Length; count++)
+            {
+                if (_countryArray[count].Iso2 == iso2)
+                {
+                    return count;
+                }
+            }
+
+            return -1;
+        }
     }
 }
